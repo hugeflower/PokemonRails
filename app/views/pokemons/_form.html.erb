@@ -1,0 +1,78 @@
+<%= form_with(model: pokemon) do |form| %>
+  <% if pokemon.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(pokemon.errors.count, "error") %> prohibited this pokemon from being saved:</h2>
+
+      <ul>
+        <% pokemon.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.text_field :name, class:"form-control", placeholder:"Name" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.text_field :type1, class:"form-control", placeholder:"Type 1" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.text_field :type2, class:"form-control", placeholder:"Type 2" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.number_field :total, class:"form-control", placeholder:"Total" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.number_field :hp, class:"form-control", placeholder:"HP" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.number_field :attack, class:"form-control", placeholder:"Attack" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.number_field :defense, class:"form-control", placeholder:"Defense" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.number_field :sp_attack, class:"form-control", placeholder:"Special Attack" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.number_field :sp_defense, class:"form-control", placeholder:"Special Defense" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.number_field :speed, class:"form-control", placeholder:"Speed" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.number_field :generation, class:"form-control", placeholder:"Generation" %>
+  </div>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.label :legendary, style: "display: block" %>
+    <%= form.check_box :legendary, class:"form-check-laber"%>
+  </div>
+  <br/>
+
+  <div>
+    <%= form.submit class:"btn btn-secondary" %>
+  </div>
+<% end %>

@@ -1,0 +1,45 @@
+<div id="<%= dom_id pokemon %>">
+  <h1><%= pokemon.name %></h1>
+  <table id="pokemons" class="table table-hover">
+    <thead class="thead-dark">
+        <th scope="col">Type 1</th>
+        <th scope="col">Type 2</th>
+        <th scope="col">Total</th>
+        <th scope="col">HP</th>
+        <th scope="col">Attack</th>
+        <th scope="col">Defense</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th scope="col"><%= pokemon.type1 %></th>
+          <th scope="col"><%= pokemon.type2 %></th>
+          <th scope="col"><%= pokemon.total %></th>
+          <th scope="col"><%= pokemon.hp %></th>
+          <th scope="col"><%= pokemon.attack %></th>
+          <th scope="col"><%= pokemon.defense %></th>
+        </tr>
+    </tbody>
+  </table>
+  <br/>
+  <table id="pokemons" class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+        <th scope="col">Special Attack</th>
+        <th scope="col">Special Defense</th>
+        <th scope="col">Speed</th>
+        <th scope="col">Generation</th>
+        <th scope="col">Legendary</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th scope="col"><%= pokemon.sp_attack %></th>
+          <th scope="col"><%= pokemon.sp_defense %></th>
+          <th scope="col"><%= pokemon.speed %></th>
+          <th scope="col"><%= pokemon.generation %></th>
+          <th scope="col"><%= pokemon.legendary %></th>
+        </tr>
+    </tbody>
+  </table>
+</div>
