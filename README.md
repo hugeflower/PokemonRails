@@ -5,7 +5,8 @@
 
 Voici quelques commandes pour voir le projet.
 
-* Vous pouvez remplir la base de données avec la commande db:seed
+* Vous pouvez commencer par faire `bundle install`
+* Vous pouvez remplir la base de données avec la commande `rails db:migrate` et `rails db:seed`
 * Vous pouvez ensuite lancer le server avec la commande rails s
 
 Vous pouvez accéder directement à l'API en regardant les URI après avoir fait la commande rails routes
