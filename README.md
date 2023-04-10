@@ -17,7 +17,7 @@ Voici un exemple de JSON fonctionnel et complet pour faciliter vos tests :
     "name" : "Test",
     "type1" : "Psychic",
     "type2" : "Grass",
-    "total" : 42,
+    "total" : 252,
     "hp" : 42,
     "attack" : 42,
     "defense" : 42,
